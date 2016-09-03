@@ -42,7 +42,8 @@ TARGET_OTA_ASSERT_DEVICE := htc_m8,htc_m8whl,htc_m8wl,m8,m8wl,m8wlv,m8vzw,m8whl,
 
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/htc/m8/mkbootimg.mk
-TARGET_KERNEL_CONFIG := cm_m8_defconfig
+TARGET_KERNEL_CONFIG := aopp_m8_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/m8/bluetooth
